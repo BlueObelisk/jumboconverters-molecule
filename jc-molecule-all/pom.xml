@@ -11,29 +11,29 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>jumbo-converters-molecule-all</artifactId>
-    <name>jumbo-converters-molecule-all</name>
+    <artifactId>jc-molecule-all</artifactId>
+    <name>jc-molecule-all</name>
     <packaging>pom</packaging>
 	
     <dependencies>
         <dependency>
             <groupId>cml</groupId>
-            <artifactId>jumbo-converters-molecule-cml</artifactId>
+            <artifactId>jc-molecule-cml</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>cml</groupId>
-            <artifactId>jumbo-converters-molecule-mdl</artifactId>
+            <artifactId>jc-molecule-mdl</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>cml</groupId>
-            <artifactId>jumbo-converters-molecule-pubchem</artifactId>
+            <artifactId>jc-molecule-pubchem</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>cml</groupId>
-            <artifactId>jumbo-converters-molecule-xyz</artifactId>
+            <artifactId>jc-molecule-xyz</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

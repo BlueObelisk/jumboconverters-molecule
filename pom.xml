@@ -9,16 +9,16 @@
         <version>0.3-SNAPSHOT</version>
     </parent>
 
-    <artifactId>jumbo-converters-molecule</artifactId>
+    <artifactId>jc-molecule</artifactId>
     <packaging>pom</packaging>
-    <name>jumbo-converters-molecule</name>
+    <name>jc-molecule</name>
 
     <modules>
-        <module>jumbo-converters-molecule-all</module>
-        <module>jumbo-converters-molecule-cml</module>
-        <module>jumbo-converters-molecule-mdl</module>
-        <module>jumbo-converters-molecule-pubchem</module>
-        <module>jumbo-converters-molecule-xyz</module>
+        <module>jc-molecule-all</module>
+        <module>jc-molecule-cml</module>
+        <module>jc-molecule-mdl</module>
+        <module>jc-molecule-pubchem</module>
+        <module>jc-molecule-xyz</module>
     </modules>
 
 

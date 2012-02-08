@@ -10,22 +10,28 @@
 		<version>0.3-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>jumbo-converters-molecule-pubchem</artifactId>
-	<name>jumbo-converters-molecule-pubchem</name>
+	<artifactId>jc-molecule-pubchem</artifactId>
+	<name>jc-molecule-pubchem</name>
 
 	<dependencies>
+        <dependency>
+            <groupId>${jumbo.groupId}</groupId>
+            <artifactId>jumbo</artifactId>
+            <version>${jumbo.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>cml</groupId>
-			<artifactId>jumbo-converters-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>cml</groupId>
-			<artifactId>jumbo-converters-molecule-cml</artifactId>
+			<artifactId>jc-top-core</artifactId>
             <version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>cml</groupId>
-			<artifactId>jumbo-converters-molecule-mdl</artifactId>
+			<artifactId>jc-molecule-cml</artifactId>
+            <version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>cml</groupId>
+			<artifactId>jc-molecule-mdl</artifactId>
             <version>${project.version}</version>
 		</dependency>
 		<dependency>
@@ -44,7 +50,8 @@
 		</dependency>
 		<dependency>
 			<groupId>cml</groupId>
-			<artifactId>jumbo-converters-testutils</artifactId>
+			<artifactId>jc-top-testutils</artifactId>
+            <version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 
