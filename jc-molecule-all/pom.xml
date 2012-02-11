@@ -6,9 +6,8 @@
 
     <parent>
         <groupId>cml</groupId>
-        <artifactId>jumboconverters2-parent</artifactId>
+        <artifactId>jc-molecule</artifactId>
         <version>0.3-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>jc-molecule-all</artifactId>
