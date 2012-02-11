@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>cml</groupId>
-        <artifactId>jumbo-converters</artifactId>
+        <artifactId>jumboconverters2-parent</artifactId>
         <version>0.3-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
