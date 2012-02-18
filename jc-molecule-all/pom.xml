@@ -12,7 +12,7 @@
 
     <artifactId>jc-molecule-all</artifactId>
     <name>jc-molecule-all</name>
-    <packaging>pom</packaging>
+    <packaging>${all.packaging}</packaging>
 	
     <dependencies>
         <dependency>
