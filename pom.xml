@@ -21,7 +21,7 @@
 	</repositories>
 	
     <modules>
-        <module>jc-molecule-axyz</module>
+        <module>jc-molecule-xyz</module>
         <module>jc-molecule-cml</module>
         <module>jc-molecule-mdl</module>
         <module>jc-molecule-pubchem</module>

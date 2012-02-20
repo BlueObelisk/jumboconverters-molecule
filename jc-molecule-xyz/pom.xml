@@ -10,8 +10,8 @@
 		<version>0.3-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>jc-molecule-axyz</artifactId>
-	<name>jc-molecule-axyz</name>
+	<artifactId>jc-molecule-xyz</artifactId>
+	<name>jc-molecule-xyz</name>
 
 	<dependencies>
 		<dependency>
