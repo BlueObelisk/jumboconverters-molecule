@@ -13,7 +13,6 @@ import org.xmlcml.cml.converters.AbstractConverter;
 import org.xmlcml.cml.converters.MimeType;
 import org.xmlcml.cml.converters.cml.CMLCommon;
 import org.xmlcml.cml.converters.cml.CMLSelector;
-import org.xmlcml.cml.converters.molecule.MoleculeModule;
 import org.xmlcml.cml.converters.molecule.mdl.MDLConverter.CoordType;
 import org.xmlcml.cml.element.CMLMolecule;
 
@@ -60,7 +59,7 @@ public class CML2MDLConverter extends AbstractConverter {
 	}
 	
 	public MimeType getOutputType() {
-		return MoleculeModule.MDL_TYPE;
+		return MDLModule.MOL_TYPE;
 	}
 	
 	public String getDescription() {

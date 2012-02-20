@@ -11,7 +11,6 @@ import org.xmlcml.cml.converters.AbstractConverter;
 import org.xmlcml.cml.converters.Converter;
 import org.xmlcml.cml.converters.MimeType;
 import org.xmlcml.cml.converters.cml.CMLCommon;
-import org.xmlcml.cml.converters.molecule.MoleculeModule;
 import org.xmlcml.cml.element.CMLAtom;
 import org.xmlcml.cml.element.CMLCml;
 import org.xmlcml.cml.element.CMLMolecule;
@@ -70,7 +69,7 @@ public class XYZ2CMLConverter extends AbstractConverter implements
 	}
 
 	public MimeType getInputType() {
-		return MoleculeModule.XYZ_TYPE;
+		return XYZModule.XYZ_TYPE;
 	}
 	
 	public MimeType getOutputType() {

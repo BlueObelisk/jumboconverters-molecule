@@ -10,7 +10,6 @@ import org.apache.log4j.Logger;
 import org.xmlcml.cml.converters.AbstractConverter;
 import org.xmlcml.cml.converters.MimeType;
 import org.xmlcml.cml.converters.cml.CMLCommon;
-import org.xmlcml.cml.converters.molecule.MoleculeModule;
 import org.xmlcml.cml.element.CMLCml;
 import org.xmlcml.cml.element.CMLMolecule;
 
@@ -50,7 +49,7 @@ public class MDL2CMLConverter extends AbstractConverter {
 	}
 	
 	public MimeType getInputType() {
-		return MoleculeModule.MDL_TYPE;
+		return MDLModule.MOL_TYPE;
 	}
 	
 	public MimeType getOutputType() {

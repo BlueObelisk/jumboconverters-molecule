@@ -15,7 +15,6 @@ import org.xmlcml.cml.converters.AbstractConverter;
 import org.xmlcml.cml.converters.MimeType;
 import org.xmlcml.cml.converters.cml.CMLCommon;
 import org.xmlcml.cml.converters.cml.CMLSelector;
-import org.xmlcml.cml.converters.molecule.MoleculeModule;
 import org.xmlcml.cml.element.CMLMolecule;
 import org.xmlcml.cml.element.CMLProperty;
 import org.xmlcml.cml.element.CMLScalar;
@@ -150,7 +149,7 @@ public class CML2SDFConverter extends AbstractConverter {
 	}
 	
 	public MimeType getOutputType() {
-		return MoleculeModule.SDF_TYPE;
+		return MDLModule.SDF_TYPE;
 	}
 	
 	public String getDescription() {

@@ -8,7 +8,6 @@ package org.xmlcml.cml.converters.molecule.mdl;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cml.converters.testutils.RegressionSuite;
-
 /**
  *
  * @author ojd20

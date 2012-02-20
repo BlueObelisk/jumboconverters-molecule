@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>cml</groupId>
+		<groupId>org.xml-cml.jc</groupId>
 		<artifactId>jc-molecule</artifactId>
 		<version>0.3-SNAPSHOT</version>
 	</parent>
@@ -15,10 +15,17 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>cml</groupId>
+			<groupId>org.xml-cml.jc</groupId>
 			<artifactId>jc-top-core</artifactId>
             <version>${project.version}</version>
 		</dependency>
 		
+
+		<dependency>
+			<groupId>${jc.groupId}</groupId>
+			<artifactId>jc-top-testutils</artifactId>
+            <version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 </project>

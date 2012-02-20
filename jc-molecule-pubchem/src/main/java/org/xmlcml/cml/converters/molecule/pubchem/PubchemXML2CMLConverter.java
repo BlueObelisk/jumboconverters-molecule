@@ -15,7 +15,6 @@ import org.xmlcml.cml.converters.AbstractConverter;
 import org.xmlcml.cml.converters.MimeType;
 import org.xmlcml.cml.converters.Util;
 import org.xmlcml.cml.converters.cml.CMLCommon;
-import org.xmlcml.cml.converters.molecule.MoleculeModule;
 import org.xmlcml.cml.element.CMLAtom;
 import org.xmlcml.cml.element.CMLAtomParity;
 import org.xmlcml.cml.element.CMLBond;
@@ -711,7 +710,7 @@ public class PubchemXML2CMLConverter extends AbstractConverter {
    }
 
 	public MimeType getInputType() {
-		return MoleculeModule.PUBCHEM_XML_TYPE;
+		return PubchemModule.PUBCHEM_XML_TYPE;
 	}
 	
 	public MimeType getOutputType() {

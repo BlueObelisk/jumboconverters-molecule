@@ -1,7 +1,6 @@
 package org.xmlcml.cml.converters.molecule.mdl;
 
 import java.io.File;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -24,7 +23,6 @@ import org.xmlcml.cml.element.CMLMolecule;
 import org.xmlcml.cml.element.CMLScalar;
 import org.xmlcml.cml.interfacex.HasDataType;
 import org.xmlcml.cml.interfacex.HasDictRef;
-import org.xmlcml.cml.converters.molecule.MoleculeModule;
 
 public class SDF2CMLConverter extends AbstractConverter implements
 		Converter {
@@ -123,7 +121,7 @@ public class SDF2CMLConverter extends AbstractConverter implements
 	}
 	
 	public MimeType getInputType() {
-		return MoleculeModule.SDF_TYPE;
+		return MDLModule.SDF_TYPE;
 	}
 	
 	public MimeType getOutputType() {

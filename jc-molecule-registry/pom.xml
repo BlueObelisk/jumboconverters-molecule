@@ -5,25 +5,19 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>cml</groupId>
+		<groupId>org.xml-cml.jc</groupId>
 		<artifactId>jc-molecule</artifactId>
 		<version>0.3-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>jc-molecule-xyz</artifactId>
-	<name>jc-molecule-xyz</name>
+	<artifactId>jc-molecule-registry</artifactId>
+	<name>jc-molecule-registry</name>
 
 	<dependencies>
 		<dependency>
-			<groupId>cml</groupId>
-			<artifactId>jc-top-core</artifactId>
+			<groupId>${jc.groupId}</groupId>
+			<artifactId>jc-molecule-all</artifactId>
             <version>${project.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>cml</groupId>
-			<artifactId>jc-molecule-cml</artifactId>
-            <version>${project.version}</version>
-		</dependency>
-
 	</dependencies>
 </project>
