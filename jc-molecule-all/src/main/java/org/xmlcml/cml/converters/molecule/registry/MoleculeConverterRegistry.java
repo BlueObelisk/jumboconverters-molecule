@@ -3,14 +3,14 @@ package org.xmlcml.cml.converters.molecule.registry;
 import org.xmlcml.cml.converters.registry.ConverterRegistry;
 
 /**
- * @author Sam Adams
+ * @author pm286
  */
 public class MoleculeConverterRegistry extends ConverterRegistry {
 
     /** create singleton registry
      */
     private static MoleculeConverterRegistry MOLECULE_CONVERTER_REGISTRY = null;
-    
+
     public static synchronized MoleculeConverterRegistry getDefaultConverterRegistry() {
     	if (MOLECULE_CONVERTER_REGISTRY == null) {
     		MOLECULE_CONVERTER_REGISTRY = new MoleculeConverterRegistry(MoleculeConverterRegistry.class.getClassLoader());
@@ -18,7 +18,7 @@ public class MoleculeConverterRegistry extends ConverterRegistry {
     	}
     	return MOLECULE_CONVERTER_REGISTRY;
     }
-    
+
     public MoleculeConverterRegistry(ClassLoader classLoader) {
     	super(classLoader);
     }
@@ -27,5 +27,5 @@ public class MoleculeConverterRegistry extends ConverterRegistry {
     	super(clazz);
     }
 
-    
+
 }

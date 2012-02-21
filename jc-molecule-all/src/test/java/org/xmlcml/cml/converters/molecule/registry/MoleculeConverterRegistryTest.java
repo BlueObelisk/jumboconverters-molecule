@@ -14,6 +14,7 @@ import org.xmlcml.cml.converters.Converter;
 import org.xmlcml.cml.converters.MimeType;
 import org.xmlcml.cml.converters.cml.CML2CMLLiteConverter;
 import org.xmlcml.cml.converters.cml.CMLCommon;
+import org.xmlcml.cml.converters.molecule.registry.MoleculeConverterRegistry;
 import org.xmlcml.cml.converters.registry.ConverterRegistry;
 import org.xmlcml.cml.converters.registry.TypePair;
 import org.xmlcml.cml.converters.molecule.mdl.MDLModule;
@@ -26,20 +27,23 @@ public class MoleculeConverterRegistryTest {
 	String FOO = "chemical/x-foo";
 	TypePair PAIR_OK  = new TypePair(FOO, CML);
 	TypePair PAIR_MISSING  = new TypePair(CML, CDX);
-	
+
     @Test
     public void testMap() {
     	Map<TypePair, List<Converter>> map = MoleculeConverterRegistry.getDefaultConverterRegistry().getMap();
     	Assert.assertNotNull(map);
     	// size will change as more are added
-    	Assert.assertEquals(2, map.size());
+    	Assert.assertEquals(9, map.size());
     }
 
     @Test
     public void testList() {
     	List<Converter> converterList = MoleculeConverterRegistry.getDefaultConverterRegistry().getConverterList();
     	Assert.assertNotNull(converterList);
-    	Assert.assertEquals(2, converterList.size());
+    	for (Converter converter : converterList) {
+    		System.out.println(converter);
+    	}
+    	Assert.assertEquals(10, converterList.size());
     }
 
     @Test
@@ -73,8 +77,8 @@ public class MoleculeConverterRegistryTest {
     	for (Converter converter : converters) {
     		System.out.println("Converter: "+converter);
     	}
-    	Assert.assertEquals("mdl", 1, converters.size());
-    	Assert.assertEquals("mdl", "org.xmlcml.cml.converters.molecules.mdl.MDL2CMLConverter", converters.get(0).getClass().getName());
+    	Assert.assertEquals("mdl", 2, converters.size());
+    	Assert.assertEquals("mdl", "org.xmlcml.cml.converters.molecule.mdl.MDL2CMLConverter", converters.get(0).getClass().getName());
     }
 
     @Test
@@ -84,7 +88,7 @@ public class MoleculeConverterRegistryTest {
 //    	for (Converter converter : converters) {
 //    		System.out.println(converter);
 //    	}
-    	Assert.assertEquals("cml", 1, converters.size());
+    	Assert.assertEquals("cml", 4, converters.size());
     }
 
 	@Test
@@ -103,7 +107,7 @@ public class MoleculeConverterRegistryTest {
 	public void testFindTypesFromSuffix() {
 		Set<MimeType> types = MoleculeConverterRegistry.getDefaultConverterRegistry().getTypes("cml");
 		Assert.assertNotNull("get types", types);
-		Assert.assertEquals("get types", 1, types.size());
+		Assert.assertEquals("get types", 2, types.size());
 		Assert.assertEquals("get types", "chemical/x-cml", ((MimeType)types.toArray()[0]).getMimeType());
 	}
 
@@ -118,10 +122,9 @@ public class MoleculeConverterRegistryTest {
 	@Test
 	public void testFindSingleTypeFromSuffix() {
 		MimeType type = MoleculeConverterRegistry.getDefaultConverterRegistry().getSingleTypeFromSuffix("cml");
-		Assert.assertNotNull("get type", type);
-		Assert.assertEquals("get type", "chemical/x-cml", type.getMimeType());
+		Assert.assertNull("get type", type);
 	}
-	
+
 	@Test
 	public void testSingletonConverterRegistry() {
 		Assert.assertNotNull(MoleculeConverterRegistry.getDefaultConverterRegistry());
@@ -136,7 +139,7 @@ public class MoleculeConverterRegistryTest {
 		converterList = converterRegistry.getConverterList();
 		Assert.assertNotNull(converterList);
 	}
-	
+
 	@Test
 	public void testCreateRegistryList() {
 		ConverterRegistry converterRegistry = new MoleculeConverterRegistry(MoleculeConverterRegistry.class.getClassLoader());
@@ -155,20 +158,20 @@ public class MoleculeConverterRegistryTest {
 		}
 		Assert.assertTrue("has cmllite", hasCmllite);
 	}
-	
+
 	@Test
 	public void testSingletonConverterRegistryList0() {
 		ConverterRegistry converterRegistry = MoleculeConverterRegistry.getDefaultConverterRegistry();
 		List<Converter> converterList = converterRegistry.getConverterList();
 		Assert.assertNotNull(converterList);
-		Assert.assertEquals("converterList", 2, converterList.size());
+		Assert.assertEquals("converterList", 10, converterList.size());
 	}
 
 	@Test
 	public void testSingletonConverterRegistryList() {
 		List<Converter> converterList = MoleculeConverterRegistry.getDefaultConverterRegistry().getConverterList();
 		Assert.assertNotNull(converterList);
-		Assert.assertEquals("converterList", 2, converterList.size());
+		Assert.assertEquals("converterList", 10, converterList.size());
 	}
 
 }
