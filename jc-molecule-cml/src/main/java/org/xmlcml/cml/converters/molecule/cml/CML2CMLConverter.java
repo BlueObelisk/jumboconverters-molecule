@@ -12,10 +12,8 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cml.base.CMLElement;
 import org.xmlcml.cml.base.CMLElement.CoordinateType;
-import org.xmlcml.cml.converters.AbstractConverter;
-import org.xmlcml.cml.converters.Converter;
 import org.xmlcml.cml.converters.MimeType;
-import org.xmlcml.cml.converters.cml.CMLCommon;
+import org.xmlcml.cml.converters.molecule.core.MoleculeConverter;
 import org.xmlcml.cml.element.CMLAtomSet;
 import org.xmlcml.cml.element.CMLCml;
 import org.xmlcml.cml.element.CMLFormula;
@@ -28,8 +26,7 @@ import org.xmlcml.cml.tools.MoleculeTool;
 import org.xmlcml.cml.tools.Morgan;
 import org.xmlcml.cml.tools.SMILESTool;
 
-public class CML2CMLConverter extends AbstractConverter implements
-		Converter {
+public class CML2CMLConverter extends MoleculeConverter {
 	public static final Logger LOG = Logger
 	.getLogger(CML2CMLConverter.class);
 	static {
@@ -258,7 +255,6 @@ public class CML2CMLConverter extends AbstractConverter implements
 		this.selectNodesXPath = selectNodesXPath;
 	}
 
-	@Override
 	public String getDescription() {
 		return "null";
 	}

@@ -10,16 +10,14 @@ import org.apache.log4j.Logger;
 import org.xmlcml.cml.base.CMLBuilder;
 import org.xmlcml.cml.base.CMLElement;
 import org.xmlcml.cml.base.CMLElement.CoordinateType;
-import org.xmlcml.cml.converters.AbstractConverter;
-import org.xmlcml.cml.converters.Converter;
 import org.xmlcml.cml.converters.MimeType;
 import org.xmlcml.cml.converters.cml.CMLCommon;
 import org.xmlcml.cml.converters.cml.CMLSelector;
+import org.xmlcml.cml.converters.molecule.core.MoleculeConverter;
 import org.xmlcml.cml.element.CMLAtom;
 import org.xmlcml.cml.element.CMLMolecule;
 
-public class CML2XYZConverter extends AbstractConverter implements
-		Converter {
+public class CML2XYZConverter extends MoleculeConverter {
 
 	private static final Logger LOG = Logger.getLogger(CML2XYZConverter.class);
 	static {

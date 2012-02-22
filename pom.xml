@@ -21,6 +21,7 @@
 	</repositories>
 	
     <modules>
+        <module>jc-molecule-core</module>
         <module>jc-molecule-xyz</module>
         <module>jc-molecule-cml</module>
         <module>jc-molecule-mdl</module>

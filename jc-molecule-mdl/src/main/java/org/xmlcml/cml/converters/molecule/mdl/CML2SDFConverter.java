@@ -11,15 +11,15 @@ import org.apache.log4j.Logger;
 import org.xmlcml.cml.base.CMLBuilder;
 import org.xmlcml.cml.base.CMLConstants;
 import org.xmlcml.cml.base.CMLElement;
-import org.xmlcml.cml.converters.AbstractConverter;
 import org.xmlcml.cml.converters.MimeType;
 import org.xmlcml.cml.converters.cml.CMLCommon;
 import org.xmlcml.cml.converters.cml.CMLSelector;
+import org.xmlcml.cml.converters.molecule.core.MoleculeConverter;
 import org.xmlcml.cml.element.CMLMolecule;
 import org.xmlcml.cml.element.CMLProperty;
 import org.xmlcml.cml.element.CMLScalar;
 
-public class CML2SDFConverter extends AbstractConverter {
+public class CML2SDFConverter extends MoleculeConverter {
 	
 	private static final Logger LOG = Logger.getLogger(CML2SDFConverter.class);
 	static {

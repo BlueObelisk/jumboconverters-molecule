@@ -7,13 +7,13 @@ import nu.xom.Element;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cml.converters.AbstractConverter;
 import org.xmlcml.cml.converters.MimeType;
 import org.xmlcml.cml.converters.cml.CMLCommon;
+import org.xmlcml.cml.converters.molecule.core.MoleculeConverter;
 import org.xmlcml.cml.element.CMLCml;
 import org.xmlcml.cml.element.CMLMolecule;
 
-public class MDL2CMLConverter extends AbstractConverter {
+public class MDL2CMLConverter extends MoleculeConverter {
 	private static final Logger LOG = Logger.getLogger(MDL2CMLConverter.class);
 	static {
 		LOG.setLevel(Level.INFO);

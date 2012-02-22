@@ -16,7 +16,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.xml-cml.jc</groupId>
-			<artifactId>jc-top-core</artifactId>
+			<artifactId>jc-molecule-core</artifactId>
             <version>${project.version}</version>
 		</dependency>
 		

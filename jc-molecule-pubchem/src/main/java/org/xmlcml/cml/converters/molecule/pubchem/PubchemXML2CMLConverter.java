@@ -11,10 +11,10 @@ import nu.xom.Nodes;
 import org.apache.log4j.Logger;
 import org.xmlcml.cml.base.CMLConstants;
 import org.xmlcml.cml.base.CMLUtil;
-import org.xmlcml.cml.converters.AbstractConverter;
 import org.xmlcml.cml.converters.MimeType;
 import org.xmlcml.cml.converters.Util;
 import org.xmlcml.cml.converters.cml.CMLCommon;
+import org.xmlcml.cml.converters.molecule.core.MoleculeConverter;
 import org.xmlcml.cml.element.CMLAtom;
 import org.xmlcml.cml.element.CMLAtomParity;
 import org.xmlcml.cml.element.CMLBond;
@@ -24,7 +24,7 @@ import org.xmlcml.cml.element.CMLName;
 import org.xmlcml.cml.element.CMLProperty;
 import org.xmlcml.cml.element.CMLScalar;
 
-public class PubchemXML2CMLConverter extends AbstractConverter {
+public class PubchemXML2CMLConverter extends MoleculeConverter {
 
    private static final Logger LOG = Logger.getLogger(PubchemXML2CMLConverter.class);
    public final static String CID = "pubchem:cid";
