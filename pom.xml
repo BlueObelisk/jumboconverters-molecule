@@ -27,6 +27,7 @@
         <module>jc-molecule-mdl</module>
         <module>jc-molecule-pubchem</module>
         <module>jc-molecule-all</module>
+        <module>jc-molecule-test</module>
     </modules>
 
     <dependencies>
