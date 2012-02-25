@@ -19,7 +19,8 @@
 	    <url>http://maven.ch.cam.ac.uk/m2repo</url>
 	  </repository>
 	</repositories>
-	
+
+<!--  aggregates modules -->	
     <modules>
         <module>jc-molecule-core</module>
         <module>jc-molecule-xyz</module>
@@ -27,16 +28,10 @@
         <module>jc-molecule-mdl</module>
         <module>jc-molecule-pubchem</module>
         <module>jc-molecule-all</module>
-        <module>jc-molecule-test</module>
     </modules>
 
+<!--  runs only aggregated tests -->
     <dependencies>
-        <dependency>
-            <groupId>${jc.groupId}</groupId>
-            <artifactId>jc-top-core</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
