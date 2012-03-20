@@ -15,12 +15,6 @@
     <packaging>${all.packaging}</packaging>
 	
     <dependencies>
-		<dependency>
-			<groupId>${jc.groupId}</groupId>
-			<artifactId>jc-top-core</artifactId>
-			<scope>compile</scope>
-            <version>${project.version}</version>
-		</dependency>
         <dependency>
             <groupId>${jc.groupId}</groupId>
             <artifactId>jc-molecule-core</artifactId>

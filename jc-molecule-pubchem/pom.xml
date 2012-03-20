@@ -16,6 +16,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>${jc.groupId}</groupId>
+			<artifactId>jc-top-core</artifactId>
+            <version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${jc.groupId}</groupId>
 			<artifactId>jc-molecule-cml</artifactId>
             <version>${project.version}</version>
 		</dependency>
