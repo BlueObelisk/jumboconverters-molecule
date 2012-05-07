@@ -28,6 +28,7 @@ public class EditorTest {
 	private String xpath;
  */
 	@Test
+	@Ignore // missing resource file
 	public void addHydrogens() {
 		CMLMolecule molIn = SMILESTool.createMolecule("[C][O][N]");
 		CMLEditorList cmlEditorConverter = new CMLEditorList();

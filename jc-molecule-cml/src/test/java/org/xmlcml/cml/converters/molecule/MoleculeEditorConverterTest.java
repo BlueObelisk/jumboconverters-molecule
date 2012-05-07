@@ -28,6 +28,7 @@ public class MoleculeEditorConverterTest {
 	private String xpath;
  */
 	@Test
+	@Ignore //missing resource file
 	public void addHydrogens() {
 		CMLMolecule molIn = SMILESTool.createMolecule("[C][O][N]");
 		CMLEditorList cmlEditorConverter = new CMLEditorList();
@@ -39,6 +40,7 @@ public class MoleculeEditorConverterTest {
 	}
 	
 	@Test
+	@Ignore
 	public void addCoordinates2D1() {
 		CMLMolecule molIn = SMILESTool.createMolecule("[C][O][N]");
 		CMLEditorList cmlEditorConverter = new CMLEditorList();
